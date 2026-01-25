@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  font-family: sans-serif;
+  background-color: darkslategray;
+}
+.main-container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+}
+.main-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main-section-title h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: -2px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-section-title p{
+  font-size: 2.5rem;
+  line-height: 1rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: white;
+}
+.main-section-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.main-section-data .input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main-section-data .input-section label {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: white;
+}
+.main-section-data .input-section input {
+  width: 12rem;
+  height: 10rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(white, white) padding-box,linear-gradient(90deg, #7f00ff, #00c6ff) border-box;
+  outline: none;
+  cursor: not-allowed;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
