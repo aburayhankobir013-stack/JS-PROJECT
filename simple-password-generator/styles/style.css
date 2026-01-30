@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #5555a5;
+}
+.main-container{
+  max-width: 1280px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.main-container .password-app-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #0b0bc3;
+  width: 35%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.password-app-container .display-password{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.display-password span{
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+.password-app-container .password-length-section{
+  display: flex;
+  justify-content: space-between;
+}
+.password-length-section label{
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.password-length-section input{
+  text-align: center;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  width: 50px;
+}
+.password-app-container .upper-case-charecter-section{
+  display: flex;
+  justify-content: space-between;
+}
+.upper-case-charecter-section label{
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.password-app-container .lower-case-charecter-section{
+  display: flex;
+  justify-content: space-between;
+}
+.lower-case-charecter-section label{
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.password-app-container .number-charecter-section{
+  display: flex;
+  justify-content: space-between;
+}
+.number-charecter-section label{
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.password-app-container .special-charecter-section{
+  display: flex;
+  justify-content: space-between;
+}
+.special-charecter-section label{
+   font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  color: white;
+}
+.password-app-container .button-section{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.button-section button{
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #030335;
+  color: white;
+  border-radius: inherit;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+.button-section button:hover{
+  background-color: #3f3fd9;
+}

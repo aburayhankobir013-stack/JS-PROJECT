@@ -1,0 +1,20 @@
+/* FOR LAPTOP */
+@media screen and (max-width: 1024px) {
+  .main-container .password-app-container {
+    width: 35%;
+  }
+}
+
+/* FOR TABLET */
+@media screen and (max-width: 768px) {
+  .main-container .password-app-container{
+    width: 50%;
+  }
+}
+
+/* FOR SMARTPHONE */
+@media screen and (max-width: 640px) {
+  .main-container .password-app-container{
+    width: 80%;
+  }
+}

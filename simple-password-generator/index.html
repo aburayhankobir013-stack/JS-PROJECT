@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPLE-PASSWORD-GENERATOR</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- MAIN APP CONTAINER -->
+    <div class="password-app-container">
+      <!-- DISPLAY SECTION -->
+      <div class="display-password">
+        <span>Bw1#Hr7@</span>
+      </div>
+      <!-- PASSWORD LENGTH SECTION -->
+      <div class="password-length-section">
+        <label for="password-length-label">Password Length</label>
+        <input type="number" name="range" id="password-length-label" value="8">
+      </div>
+      <!-- UPPER CASE CHARECTER SECTION -->
+      <div class="upper-case-charecter-section">
+        <label for="upper-case-charecter-label">Contains Uppercase</label>
+        <input type="checkbox" name="upperCase" id="upper-case-charecter-label" checked="true">
+      </div>
+      <!-- LOWER CASE CHARECTER SECTION -->
+      <div class="lower-case-charecter-section">
+        <label for="lower-case-charecter-label">Contains Lowercase</label>
+        <input type="checkbox" name="Lowercase" id="lower-case-charecter-label" checked="true">
+      </div>
+      <!-- NUMBER CHARECTER SECTION -->
+      <div class="number-charecter-section">
+        <label for="number-charecter-label">Contains Numbers</label>
+        <input type="checkbox" name="numericCharecter" id="number-charecter-label" checked="true">
+      </div>
+      <!-- SPECIAL CHARECTER SECTION -->
+      <div class="special-charecter-section">
+        <label for="special-charecter-label">Contains Symbols</label>
+        <input type="checkbox" name="specialCharecter" id="special-charecter-label" checked="true">
+      </div>
+      <!-- BUTTON SECTION -->
+      <div class="button-section">
+        <button>Generate Password</button>
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPT SECTION -->
+   <script src="./scripts/app.js"></script>
+</body>
+</html>
