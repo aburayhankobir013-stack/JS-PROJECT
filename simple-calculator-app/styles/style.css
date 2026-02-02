@@ -1,0 +1,69 @@
+/* IMPORT GOOGLE FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  background-color: darkslategrey;
+}
+.main-container{
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-app-container{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.calculator-app-container .display-section{
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.display-section input{
+  width: 100%;
+  font-size: 3rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  cursor: pointer;
+  text-align: right;
+  background-color: transparent;
+  caret-color: transparent;
+  color: #fff;
+}
+.display-section input::placeholder{
+  color: #fff;
+}
+.btn button{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  cursor: pointer;
+  color: #fff;
+}
+.btn button:hover{
+  background-color: orange;
+  color: #000;
+}
