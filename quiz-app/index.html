@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ-APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- MAIN BODY CONTAINER -->
+  <div class="main-container">
+    <!-- START QUIZ CONTAINER -->
+    <section class="start-quiz-container">
+      <div class="start-quiz-title">
+        <h2>Quiz Time!</h2>
+      </div>
+      <div class="start-quiz-greeting">
+        <p>Test your knowledge with these fun questions</p>
+      </div>
+      <div class="start-quiz-btn">
+        <button>Start Quiz</button>
+      </div>
+    </section>
+    <!--QUIZ QUESTION CONTAINER -->
+    <section class="quiz-question-container quiz-result-screen">
+      <div class="question-container">
+        <h1>Wha is the capital of France?</h1>
+      </div>
+      <div class="counting-container">
+        <div class="question-counting">
+          <p>Question <span class="question-finished">1</span> of <span class="question-total">5</span></p>
+        </div>
+        <div class="score-counting">
+          <p>Score: <span class="score">0</span></p>
+        </div>
+      </div>
+      <div class="question-option-container">
+        <div class="option">
+          <button>London</button>
+        </div>
+        <div class="option">
+          <button>Berlin</button>
+        </div>
+        <div class="option">
+          <button>Paris</button>
+        </div>
+        <div class="option">
+          <button>Madrid</button>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+    </section>
+    <!-- QUIZ RESULT SECTION -->
+     <div class="quiz-result-container quiz-result-screen">
+      <div class="quiz-result-title">
+        <h2>Quiz Results</h2>
+      </div>
+      <div class="quiz-result">
+        <p class="result">You scored <span class="achieved">3</span> out of <span class="total-attemed">5</span></p>
+        <p class="comment">Good effort! Keep learning!</p>
+      </div>
+      <div class="reset-btn">
+        <button>Restart Quiz</button>
+      </div>
+     </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
