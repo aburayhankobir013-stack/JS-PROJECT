@@ -18,67 +18,77 @@ const comment=document.querySelector('.comment');
 // ALL QUIZ QUESTIONS
 const quizAllQuestions=[
   {
-    question: 'What is the capital of France?',
+    question: "What is the capital of France?",
     answers: [
-      {text: 'London', correct: false},
-      {text: 'Berlin', correct: false},
-      {text: 'Paris', correct: true},
-      {text: 'Madrid', correct: false}
-    ]
+      { text: "London", correct: false },
+      { text: "Berlin", correct: false },
+      { text: "Paris", correct: true },
+      { text: "Madrid", correct: false }
+    ],
   },
   {
-    question: 'Which planet is known as the Red Planet?',
+    question: "Which planet is known as the Red Planet?",
     answers: [
-      {text: 'Venus', correct: false},
-      {text: 'Mars', correct: true},
-      {text: 'Jupiter', correct: false},
-      {text: 'Seturn', correct: false}
-    ]
+      { text: "Venus", correct: false },
+      { text: "Mars", correct: true },
+      { text: "Jupiter", correct: false },
+      { text: "Saturn", correct: false }
+    ],
   },
   {
-    question: 'What is the largest ocean on Earth?',
+    question: "What is the largest ocean on Earth?",
     answers: [
-      {text: 'Atlantic Ocean', correct: false},
-      {text: 'Indian Ocean', correct: false},
-      {text: 'Arctic Ocean', correct: false},
-      {text: 'Pacifi Ocean', correct: true}
+      { text: "Atlantic Ocean", correct: false },
+      { text: "Indian Ocean", correct: false },
+      { text: "Arctic Ocean", correct: false },
+      { text: "Pacific Ocean", correct: true }
+    ],
+  },
+  {
+    question: "Which of these is NOT a programming language?",
+    answers: [
+      { text: "Java", correct: false },
+      { text: "Python", correct: false },
+      { text: "Banana", correct: true },
+      { text: "JavaScript", correct: false }                                                      
+    ],
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    answers: [
+      { text: "Go", correct: false },
+      { text: "Gd", correct: false },
+      { text: "Au", correct: true },
+      { text: "Ag", correct: false }
     ]
   }
 ];
-// QUIZ STATE VARIABLES
+
 let currentQuestionIndex=0;
-let score=0;
-let answersDisabled=false;
-
-questionTotal.textContent=quizAllQuestions.length;
-totalAttemed.textContent=quizAllQuestions.length;
-
+let totalQuestions=quizAllQuestions.length;
 startQuizBtn.addEventListener('click',startQuiz,false);
-resetBtn.addEventListener('click',restartQuiz,false);
 
 function startQuiz(){
-  currentQuestionIndex=0;
-  scoreBox.textContent=0;
+  let score=0;
+  scoreBox.textContent=score;
+  questionFinished.textContent=currentQuestionIndex+1;
+  questionTotal.textContent=totalQuestions;
   startQuizContainer.classList.add('start-quiz-screen');
   quizQuestionContainer.classList.remove('quiz-question-screen');
-  showQuestion();
-  console.log('Start Quiz now!');
+  loadQuestion();
 }
 
-function showQuestion(){
-  answersDisabled=false;
-  const currentQuestion=quizAllQuestions[currentQuestionIndex];
-  questionFinished.textContent=currentQuestionIndex+1;
-  const progressPercentage=(currentQuestionIndex/quizAllQuestions.length)*100;
-  progress.style.width=`${progressPercentage}%`;
+function loadQuestion(){
+  let currentQuestion=quizAllQuestions[currentQuestionIndex];
   questionContainer.textContent=currentQuestion.question;
+  let optionIndex=0;
   optionBtns.forEach(function(optionBtn){
-    currentQuestion.answers.forEach(function(answer){
-      optionBtn.textContent=answer.text;
-    });
+    optionBtn.textContent=currentQuestion.answers[optionIndex].text;
+    optionIndex++;
   });
+  findAnswer();
 }
 
-function restartQuiz(){
-  console.log('Restart Quiz now!');
+function findAnswer(){
+  
 }
